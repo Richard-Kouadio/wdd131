@@ -1,0 +1,182 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+
+}
+
+
+
+header {
+
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+
+#menuButton {
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    font-size: 2rem;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+}
+
+
+
+nav {
+
+    display: none;
+    flex-direction: column;
+
+    background: #222;
+
+}
+
+
+
+nav.open {
+
+    display: flex;
+
+}
+
+
+
+nav a {
+
+    color: white;
+    padding: 15px;
+
+    text-decoration: none;
+
+}
+
+
+
+nav a:hover {
+
+    background: #00509e;
+
+}
+
+
+
+.active {
+
+    background: #00509e;
+
+}
+
+
+
+main {
+
+    max-width: 1000px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+}
+
+
+
+main h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+}
+
+
+
+figure {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 0 10px #ccc;
+
+}
+
+
+
+figure img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+
+
+figcaption {
+
+    font-weight: bold;
+
+    padding: 10px;
+
+}
+
+
+
+footer {
+
+    background: #003366;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+#lastModified {
+
+    color: yellow;
+
+}
