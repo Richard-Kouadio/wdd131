@@ -1,0 +1,166 @@
+```css:root {
+
+    --green: #008751;
+    --orange: #FCD116;
+    --red: #CE1126;
+    --white: #ffffff;
+    --black: #000000;
+    --light: #f3f3f3;
+
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--light);
+
+    color: var(--black);
+
+}
+
+
+
+header {
+
+    background-color: var(--green);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+}
+
+
+
+h1 {
+
+    margin: 0;
+
+}
+
+
+
+.hero img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+.content {
+
+    padding: 1rem;
+
+}
+
+
+
+.card {
+
+    background-color: var(--white);
+
+    padding: 1.5rem;
+
+    margin-bottom: 1rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px #888;
+
+}
+
+
+
+h2 {
+
+    color: var(--green);
+
+}
+
+
+
+.weather-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+}
+
+
+
+footer {
+
+    background-color: var(--black);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1rem;
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .content {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 2rem;
+
+        max-width: 1000px;
+
+        margin: -120px auto 2rem;
+
+        position: relative;
+
+    }
+
+
+
+    .weather-icon {
+
+        display: none;
+
+    }
+
+
+
+    .weather h2::after {
+
+        content: " ⛅";
+
+    }
+
+
+}
+
+```

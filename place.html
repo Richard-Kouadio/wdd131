@@ -1,0 +1,152 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Côte d'Ivoire | Country Page</title>
+
+    <meta name="description"
+        content="A country page about Côte d'Ivoire featuring information about its location, culture, and weather.">
+
+    <meta name="author" content="Kouame Richard Kouadio">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Côte d'Ivoire</h1>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+
+                <source srcset="images/cote-large.webp" media="(min-width: 1000px)">
+
+                <source srcset="images/cote-medium.webp" media="(min-width: 500px)">
+
+                <img src="images/cote-small.webp" alt="Landscape view of Côte d'Ivoire" width="1500" height="750">
+
+            </picture>
+
+        </section>
+
+
+
+        <section class="content">
+
+
+            <article class="card">
+
+                <h2>About Côte d'Ivoire</h2>
+
+                <p>
+                    Côte d'Ivoire is a country located in West Africa.
+                    It is known for its cultural diversity, tropical climate,
+                    beautiful beaches, and important agricultural production.
+                </p>
+
+
+                <p>
+                    <strong>Capital:</strong> Yamoussoukro
+                </p>
+
+
+                <p>
+                    <strong>Largest City:</strong> Abidjan
+                </p>
+
+
+                <p>
+                    <strong>Population:</strong> Approximately 30 million people
+                </p>
+
+
+                <p>
+                    <strong>Official Language:</strong> French
+                </p>
+
+
+                <p>
+                    <strong>Currency:</strong> West African CFA franc
+                </p>
+
+            </article>
+
+
+
+
+            <article class="card weather">
+
+                <h2>Weather</h2>
+
+
+                <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather">
+
+
+                <p>
+                    <strong>Temperature:</strong>
+                    28°C
+                </p>
+
+
+                <p>
+                    <strong>Conditions:</strong>
+                    Partly Cloudy
+                </p>
+
+
+                <p>
+                    <strong>Wind Speed:</strong>
+                    12 km/h
+                </p>
+
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="windChill">N/A</span>
+                </p>
+
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> Kouame Richard Kouadio | Côte d'Ivoire
+        </p>
+
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
+```
