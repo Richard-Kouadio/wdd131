@@ -1,89 +1,120 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #222;
 }
 
+
+/* Header */
 header {
     background-color: #003366;
-    color: white;
     padding: 1rem;
-    text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 1rem;
 }
 
 nav a {
     text-decoration: none;
     color: #003366;
-    background: white;
-    padding: .7rem 1rem;
+    background-color: #ffffff;
+    padding: 0.7rem 1rem;
     border-radius: 5px;
     font-weight: bold;
-    transition: .3s;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background: #dddddd;
+    background-color: #dddddd;
 }
 
+
+/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-#page-title {
+main h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    color: #003366;
 }
 
+#page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Temple Gallery */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
+
 .gallery section {
-    background: white;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
+
+
+.gallery section:hover {
+    transform: translateY(-5px);
+}
+
+
+.gallery h2 {
+    color: #003366;
+    margin-bottom: 0.8rem;
+}
+
+
+.gallery p {
+    margin: 0.4rem 0;
+}
+
 
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
+    margin-top: 1rem;
 }
 
-.gallery p {
-    margin: .4rem 0;
-}
 
+/* Footer */
 footer {
-    background: #003366;
-    color: white;
+    background-color: #003366;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
-/* Tablet */
 
+/* Tablet */
 @media screen and (min-width: 640px) {
 
     .gallery {
@@ -92,8 +123,8 @@ footer {
 
 }
 
-/* Desktop */
 
+/* Desktop */
 @media screen and (min-width: 960px) {
 
     .gallery {
