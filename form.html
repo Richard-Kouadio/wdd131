@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Product review form for submitting feedback about products.">
+
+    <meta name="author" content="Kouame Richard Kouadio">
+
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+
+    <main>
+
+        <form method="get" action="review.html">
+
+            <label for="product">Product Name</label>
+
+            <select id="product" name="product" required>
+                <option value="" disabled selected>
+                    Select a Product ...
+                </option>
+            </select>
+
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label>
+                    <input type="radio" name="rating" value="1" required>
+                    ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    ☆
+                </label>
+
+            </fieldset>
+
+
+            <label for="date">Date of Installation</label>
+
+            <input type="date" id="date" name="date" required>
+
+
+            <fieldset>
+
+                <legend>Useful Features</legend>
+
+                <label>
+                    <input type="checkbox" id="feature1" name="features" value="Easy to Use">
+                    Easy to Use
+                </label>
+
+
+                <label>
+                    <input type="checkbox" id="feature2" name="features" value="Durable">
+                    Durable
+                </label>
+
+
+                <label>
+                    <input type="checkbox" id="feature3" name="features" value="Affordable">
+                    Affordable
+                </label>
+
+            </fieldset>
+
+
+            <label for="review">
+                Written Review
+            </label>
+
+            <textarea id="review" name="review"></textarea>
+
+
+            <label for="username">
+                User Name
+            </label>
+
+            <input type="text" id="username" name="username">
+
+
+            <input type="submit" value="Submit Review">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>
+            © 2026 Kouame Richard Kouadio | Côte d'Ivoire
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
