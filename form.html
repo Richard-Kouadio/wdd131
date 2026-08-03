@@ -7,11 +7,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Product review form for submitting feedback about products.">
+    <meta name="description"
+        content="A product review form created for WDD 131 where users can rate products, provide installation details, and share helpful feedback.">
 
     <meta name="author" content="Kouame Richard Kouadio">
 
-    <title>Product Review Form</title>
+    <title>Product Review Form | WDD 131 | Kouame Richard Kouadio</title>
 
     <link rel="stylesheet" href="styles/form.css">
 
@@ -22,19 +23,27 @@
 
 <body>
 
+
     <header>
-        <h1>Product Review Form</h1>
+
+        <h1>
+            Product Review Form
+        </h1>
+
     </header>
 
 
+
     <main>
+
 
         <form method="get" action="review.html">
 
 
             <label for="product">
-                Product Name
+                Product Name <span class="required">*</span>
             </label>
+
 
             <select id="product" name="product" required>
 
@@ -46,40 +55,48 @@
 
 
 
+
             <fieldset>
 
-                <legend>Overall Rating</legend>
+                <legend>
+                    Overall Rating <span class="required">*</span>
+                </legend>
 
 
-                <label for="rating1">
-                    <input type="radio" id="rating1" name="rating" value="1" required>
-                    ☆
-                </label>
+                <div class="rating">
 
 
-                <label for="rating2">
-                    <input type="radio" id="rating2" name="rating" value="2" required>
-                    ☆
-                </label>
+                    <label>
+                        ☆
+                        <input type="radio" name="rating" value="1" required>
+                    </label>
 
 
-                <label for="rating3">
-                    <input type="radio" id="rating3" name="rating" value="3" required>
-                    ☆
-                </label>
+                    <label>
+                        ☆☆
+                        <input type="radio" name="rating" value="2">
+                    </label>
 
 
-                <label for="rating4">
-                    <input type="radio" id="rating4" name="rating" value="4" required>
-                    ☆
-                </label>
+                    <label>
+                        ☆☆☆
+                        <input type="radio" name="rating" value="3">
+                    </label>
 
 
-                <label for="rating5">
-                    <input type="radio" id="rating5" name="rating" value="5" required>
-                    ☆
-                </label>
+                    <label>
+                        ☆☆☆☆
+                        <input type="radio" name="rating" value="4">
+                    </label>
 
+
+                    <label>
+                        ☆☆☆☆☆
+                        <input type="radio" name="rating" value="5">
+                    </label>
+
+
+                </div>
 
             </fieldset>
 
@@ -87,8 +104,9 @@
 
 
             <label for="date">
-                Date of Installation
+                Date of Installation <span class="required">*</span>
             </label>
+
 
             <input type="date" id="date" name="date" required>
 
@@ -97,31 +115,36 @@
 
             <fieldset>
 
-                <legend>Useful Features</legend>
+
+                <legend>
+                    Useful Features
+                </legend>
 
 
-                <label for="feature1">
-                    <input type="checkbox" id="feature1" name="features" value="Easy to Use">
-                    Easy to Use
+
+                <label>
+                    <input type="checkbox" name="features" value="Durability">
+                    Durability
                 </label>
 
 
-                <label for="feature2">
-                    <input type="checkbox" id="feature2" name="features" value="Durable">
-                    Durable
+                <label>
+                    <input type="checkbox" name="features" value="Ease of Use">
+                    Ease of Use
                 </label>
 
 
-                <label for="feature3">
-                    <input type="checkbox" id="feature3" name="features" value="Affordable">
-                    Affordable
+                <label>
+                    <input type="checkbox" name="features" value="Performance">
+                    Performance
                 </label>
 
 
-                <label for="feature4">
-                    <input type="checkbox" id="feature4" name="features" value="Good Design">
-                    Good Design
+                <label>
+                    <input type="checkbox" name="features" value="Design">
+                    Design
                 </label>
+
 
 
             </fieldset>
@@ -131,20 +154,23 @@
 
 
             <label for="review">
-                Written Review
+                Written Review <span class="optional">(Optional)</span>
             </label>
 
-            <textarea id="review" name="review"></textarea>
+
+            <textarea id="review" name="review">
+</textarea>
 
 
 
 
 
             <label for="username">
-                User Name
+                Your Name <span class="optional">(Optional)</span>
             </label>
 
-            <input type="text" id="username" name="username">
+
+            <input type="text" id="username" name="username" autocomplete="name">
 
 
 
@@ -153,7 +179,9 @@
             <input type="submit" value="Submit Review">
 
 
+
         </form>
+
 
     </main>
 

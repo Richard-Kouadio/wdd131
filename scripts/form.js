@@ -1,4 +1,5 @@
 const products = [
+
     {
         id: "p001",
         name: "Smart Watch"
@@ -18,20 +19,28 @@ const products = [
         id: "p004",
         name: "Running Shoes"
     }
+
 ];
+
 
 
 const productSelect = document.querySelector("#product");
 
 
+
 products.forEach(product => {
 
-    let option = document.createElement("option");
 
-    option.value = product.name;
+    const option = document.createElement("option");
+
+
+    option.value = product.id;
+
 
     option.textContent = product.name;
 
+
     productSelect.appendChild(option);
+
 
 });
